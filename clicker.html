@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clicker</title>
+</head>
+<body>
+    <div class="menu">
+        <nav id="nav">
+            <p id="close"><img class="img" src="list.png"alt=""></p>
+            <p><a href="clicker.html"><img src="mouse.png"alt=""> <span id="text2">Кликер</span></a></p>
+            <p><a href="secundome.html"><img src="secound.png"alt=""> <span id="text3">Секундомер</span></a></p>
+            <p><a href="timer.html"><img src="timer1.png"alt=""> <span id="text4">Таймер</span></a></p>
+       
+
+
+        </nav>
+    </div>
+     <div class="content">
+       <div class="clicker">
+         <button id="a">-</button>
+           <a ><p id="out">1</p></a>
+           <button id="b">+</button>
+
+
+        </div>
+      </div>
+    <style>
+        .content{
+        
+            width: 70%;
+            display: flex;
+            justify-content: center;
+            float: left;
+            height: 780px;
+        }
+        span{
+            position: relative;
+            left: 3%;
+        }
+        .clicker{
+            display: flex;
+            height: 500px;
+            position: relative;
+            top: 120px;
+        box-shadow: 0 0  3px black;
+border-radius: 3%;
+background-color: rgb(27, 33, 58);
+        }
+        .clicker button{
+
+            width: 120px;
+            height: 50px;
+            font-size: 40px;
+            font-family: sans-serif;
+            
+            border: 0px;
+            cursor: pointer;
+            font-weight: 700;
+            position: relative;
+      top: 40%;
+            text-align: center;
+background-color: rgb(27, 33, 58);
+     color: gold;
+       
+        }
+        .clicker button:hover{
+            color: yellow;
+        }
+        .clicker a{
+            font-weight: 900;
+        border-radius:15% ;
+            text-align: center;
+            width: 100px;
+            height: 100px;
+            font-size: 40px;
+            position: relative;
+      top: 35%;
+     text-align: center;
+color: white;
+background-color: rgb(50, 122, 230);
+position: relative;
+        }
+        .clicker p{
+            font-size: 40px;
+position: relative;
+bottom: 20%;
+
+  text-transform: linear;
+  transition-duration: 0.25s;
+        }
+  .menu{
+            background-color: rgb(27, 33, 58);
+        width: 15%;
+        height: 789px;
+        position: relative;
+           float: left;
+        }
+        #nav{
+            padding: 10px 15px;
+            font-size: 21px;
+            font-family: sans-serif;
+        
+        }
+        a{
+            text-decoration: none;
+            color: rgb(238, 231, 231);
+            
+        }
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .img{
+            cursor: pointer;
+        }
+        @media screen and (max-width:1275px){
+            .menu{
+                width: 20%;
+            }
+        }
+        @media screen and (max-width:942px){
+            .menu{
+                width: 25%;
+            }
+        }
+        @media screen and (max-width:755px){
+            .menu{
+                width: 30%;
+            }
+        }
+        @media screen and (max-width:630px){
+            .menu{
+                width: 35%;
+            }
+            .content{
+        
+        width: 60%;
+     
+            }
+        }
+        @media screen and (max-width:570px){
+      #nav{
+font-size: 18px;
+      }
+      #nav img{
+          width: 28px;
+      } .clicker{
+        
+        width: 90%;
+        height: 430px;
+
+            }
+          
+        }
+        @media screen and (max-width:475px){
+      #nav{
+font-size: 16px;
+      }
+      #nav img{
+          width: 25px;
+      } .clicker{
+        
+        width: 80%;
+        height: 350px;
+
+            }
+            .clicker p{
+            font-size: 30px;
+            }
+            .clicker a{
+                width: 70px;
+                height: 60px;
+            }
+        }
+        @media screen and (max-width:435px){
+      #nav{
+font-size: 15px;
+      }
+      #nav img{
+          width: 22px;
+      } .clicker{
+        
+        width: 70%;
+        height: 300px;
+
+            }
+            .clicker p{
+            font-size: 25px;
+bottom: 50%;
+
+            }
+            .clicker a{
+                width: 60px;
+                height: 40px;
+                
+            }
+            .clicker button{
+                top: 35%;
+            }
+        }
+        @media screen and (max-width:415px){
+      #nav{
+font-size: 13px;
+      }
+      #nav img{
+          width: 20px;
+      } .clicker{
+        
+        width: 60%;
+        height: 250px;
+
+            }
+            .clicker p{
+            font-size: 22px;
+bottom: 40%;
+
+            }
+            .clicker a{
+                width: 60px;
+                height: 40px;
+                
+            }
+        }
+        @media screen and (max-width:370px){
+      #nav{
+font-size: 13px;
+      }
+      #nav img{
+          width: 17px;
+      } .clicker{
+        
+        width: 60%;
+        height: 200px;
+
+            }
+            .clicker p{
+            font-size: 20px;
+bottom: 65%;
+
+            }
+            .clicker a{
+                width: 50px;
+                height: 30px;
+                
+            }
+            .clicker button{
+                top: 30%;
+            }
+        }
+        @media screen and (max-width:360px){
+      #nav{
+font-size: 12px;
+
+      }
+      #nav img{
+          width: 14px;
+      } .clicker{
+        
+        width: 60%;
+        height: 150px;
+
+            }
+            .clicker p{
+            font-size: 16px;
+bottom: 75%;
+
+            }
+            .clicker a{
+                width: 40px;
+                height: 20px;
+                
+            }
+            .clicker button{
+                top: 25%;
+            }
+        }
+        @media screen and (max-width:332px){
+      #nav{
+font-size: 10px;
+
+      }
+      #nav img{
+          width: 12px;
+      } .clicker{
+        
+        width: 60%;
+        height: 100px;
+
+            }
+            .clicker p{
+            font-size: 14px;
+bottom: 65%;
+
+            }
+            .clicker a{
+                width: 40px;
+                height: 20px;
+                
+            }
+            .clicker button{
+                top: 20%;
+            }
+        }
+    </style>
+    <script>
+
+var slider1=document.querySelector('.values');
+var closer=document.querySelector('.img');
+var menu=document.querySelector('.menu');
+
+var span2=document.getElementById("text2");
+var span3=document.getElementById("text3");
+var span4=document.getElementById("text4");
+var nav=document.getElementById("nav");
+
+var a=document.getElementById("b");
+var b=document.getElementById("a");
+var out=document.getElementById("out");
+
+let i=1;
+out.style=" transition:  4s ;";
+a.onclick=function(){
+i++;
+out.innerHTML=i;
+}
+b.onclick=function(){
+    i--; 
+out.innerHTML=i;
+if(i<0){
+ i=0;
+
+    out.innerHTML='0';
+}
+}
+closer.onclick=function(){
+    if(span2.innerHTML=="Кликер"){
+ 
+ menu.style="width:70px;";
+
+span2.style=" font-size: 0px;";
+span3.style=" font-size: 0px;";
+span4.style=" font-size: 0px;";
+
+
+span2.innerHTML="Клике";
+menu.style="width:50px";
+}
+else if(span2.innerHTML=="Клике"){
+console.log("hi");
+menu.style="width:30%;";
+
+span2.style=" font-size: 14px;";
+span3.style=" font-size: 14px;";
+span4.style=" font-size: 14px;";
+
+
+
+span2.innerHTML="Кликер";
+}
+}
+    </script>
+</body>
+</html>

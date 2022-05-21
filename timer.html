@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clicker</title>
+</head>
+<body>
+    <div class="menu">
+        <nav id="nav">
+            <p id="close"><img class="img" src="list.png"alt=""></p>
+     
+                <p><a href="clicker.html"><img src="mouse.png"alt=""> <span id="text2">Кликер</span></a></p>
+                <p><a href="secundome.html"><img src="secound.png"alt=""> <span id="text3">Секундомер</span></a></p>
+                <p><a href="timer.html"><img src="timer1.png"alt=""> <span id="text4">Таймер</span></a></p>
+           
+
+        </nav>
+    </div>
+     <div class="content">
+       <div class="timer">
+        <div class="out">
+            <div class="days"><img src="up.png" id="plus_hour"><p class="out1">0 h</p><img src="down.png" id="minus_hour"></div>
+            <div class="days"><img src="up.png" id="plus_minute"><p class="out2">0 m</p><img src="down.png" id="minus_minute"></div>
+            <div class="days"><img src="up.png" id="plus_second"><p class="out3">0 s</p><img src="down.png" id="minus_second"></div>
+        </div>
+        <div class="outer">
+            <p id="outer1">0h</p>
+            <p id="outer2">0m </p>
+            <p id="outer3">0s </p>
+
+
+        </div>
+        <div class="bot">
+      <button id="start">start</button>
+      <button id="stop">stop</button>
+      <button id="reset">reset</button>
+    </div>
+        </div>
+      </div>
+    <style>
+        .outer{
+            display: flex;
+            position: relative;
+       top: 15%;
+       width:50%;
+    
+       text-align: center;
+left: 25%;
+        }
+ .out img{
+     cursor: pointer;
+ }
+        .outer p{
+  
+       text-align: center;
+margin-left: 15%;
+            color: white;
+            font-family: sans-serif;
+            font-size: 30px;
+        }
+        .bot{
+            position: relative;
+  top: 25%;
+            width: 100%;
+            
+        }
+        .bot button{
+            width: 20%;
+            position: relative;
+            left: 20%;
+            height: 35px;
+            background-color: white;
+            color: black;
+            border: 0px;
+            font-family: sans-serif;
+font-size: 20px;
+        }
+        .bot button:hover{
+  
+            color: blue;
+             cursor: pointer;
+        }
+    .days{
+        width:35%;
+        text-align: center;
+    box-shadow: 0 0 1px black;   
+    }
+    
+    .out{
+        display: flex;
+        position: relative;
+       top: 10%;
+       color: rgb(255, 251, 251);
+            font-family: sans-serif;
+            font-size: 30px;
+    }
+    
+        .timer{
+            width: 50%;
+        box-shadow: 0 0 3px black;
+        border-radius: 5%;
+        border: 0px;
+            height: 60%;
+            position: relative;
+            top: 20%;
+            background-color: rgb(35, 165, 52);
+        }
+        .content{
+        
+            width: 70%;
+            display: flex;
+            justify-content: center;
+            float: left;
+            height: 780px;
+  
+        }
+
+  .menu{
+            background-color: rgb(27, 33, 58);
+        width: 15%;
+        height: 789px;
+        position: relative;
+           float: left;
+        }
+        #nav{
+            padding: 10px 15px;
+            font-size: 21px;
+            font-family: sans-serif;
+        
+        }
+        a{
+            text-decoration: none;
+            color: rgb(238, 231, 231);
+            
+        }
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .img{
+            cursor: pointer;
+        }
+        @media screen and (max-width:1255px){
+            .menu{
+                width: 30%;
+            }
+            .timer{
+                height: 60%;
+                width: 75%;
+            }
+        }
+        @media screen and (max-width:945px){
+            .menu{
+                
+                width: 30%;
+            }
+            .timer{
+                height: 60%;
+                width: 95%;
+            }
+            .bot{
+      
+  top: 13%;
+            }
+        }
+        @media screen and (max-width:775px){
+            .menu{
+                width: 30%;
+            }
+            .timer{
+            height: 50%;
+            width: 90%;
+            font-size: 20px;
+            }
+     
+            .bot button{
+            width: 20%;
+
+    
+            height: 30px;
+   
+font-size: 17px;
+        }
+            .outer p{
+  
+  font-size: 25px;
+margin-left: 13%;
+            }
+            .outer{
+          
+       top: 10%;
+            }
+            .out{
+font-size: 25px;
+top: 10%;
+            }
+            .out img{
+     width: 25px;
+ }
+        }
+        @media screen and (max-width:640px){
+            .menu{
+                width: 30%;
+            }
+            .timer{
+            height: 40%;
+            font-size: 17px;
+            width: 90%;
+
+            }
+            .bot{
+   
+  top: 2%;
+            }
+            .bot button{
+            width: 16%;
+
+    
+            height: 27px;
+margin-left: 3%;
+   
+font-size: 15px;
+        }
+            .outer p{
+  
+  font-size: 20px;
+margin-left: 14%;
+            }
+            .outer{
+          
+       top: 7%;
+            }
+            .out{
+font-size: 20px;
+top: 10%;
+            }
+            .out img{
+     width: 20px;
+ }
+ #nav p{
+    font-size: 18px;
+ }
+ #nav img{
+     width: 26px;
+ }
+        }
+        @media screen and (max-width:550px){
+            .menu{
+                width: 30%;
+            }
+            .timer{
+            height: 35%;
+            font-size: 15px;
+            width: 90%;
+
+            }
+            .bot{
+   
+  top: 5%;
+            }
+            .bot button{
+            width: 20%;
+            margin-left: 0%;
+
+    
+            height: 23px;
+   
+font-size: 13px;
+        }
+            .outer p{
+  
+  font-size: 18px;
+margin-left: 14%;
+            }
+            .outer{
+          
+       top: 5%;
+            }
+            .out{
+font-size: 17px;
+top: 7%;
+            }
+            .out img{
+     width: 18px;
+ }
+ #nav p{
+    font-size: 15px;
+ }
+ #nav img{
+     width: 22px;
+ }
+        }
+        @media screen and (max-width:527px){
+            .menu{
+                width: 30%;
+            }
+            .timer{
+            height: 35%;
+            font-size: 15px;
+            width: 90%;
+
+            }
+            .bot{
+   
+  top: 5%;
+            }
+            .bot button{
+            width: 20%;
+
+    
+            height: 23px;
+margin-left: 0%;
+   
+font-size: 13px;
+        }
+            .outer p{
+  
+  font-size: 18px;
+margin-left: 12%;
+            }
+            .outer{
+          
+       top: 5%;
+            }
+            .out{
+font-size: 17px;
+top: 7%;
+            }
+            .out img{
+     width: 18px;
+ }
+ #nav p{
+    font-size: 15px;
+ }
+ #nav img{
+     width: 22px;
+ }
+        }
+        @media screen and (max-width:475px){
+            .menu{
+                width: 30%;
+            }
+            .timer{
+            height: 40%;
+            font-size: 15px;
+            width: 95%;
+            }
+            .bot{
+   
+  top: 5%;
+            }
+            .bot button{
+            width: 20%;
+
+    
+            height: 23px;
+margin-left: 0%;
+   
+font-size: 13px;
+        }
+            .outer p{
+  
+  font-size: 18px;
+margin-left: 12%;
+            }
+            .outer{
+          
+       top: 5%;
+            }
+            .out{
+font-size: 17px;
+top: 7%;
+            }
+            .out img{
+     width: 16px;
+ }
+ #nav p{
+    font-size: 13px;
+ }
+ #nav img{
+     width: 20px;
+ }
+        }
+        @media screen and (max-width:427px){
+            .menu{
+                width: 30%;
+            }
+            .timer{
+            height: 30%;
+            font-size: 15px;
+            width: 90%;
+            }
+            .bot{
+   
+  top: 5%;
+            }
+            .bot button{
+            width: 20%;
+
+    
+            height: 23px;
+margin-left: 0%;
+   
+font-size: 13px;
+        }
+            .outer p{
+  
+  font-size: 18px;
+margin-left: 12%;
+            }
+            .outer{
+          
+       top: 5%;
+            }
+            .out{
+font-size: 17px;
+top: 7%;
+            }
+            .out img{
+     width: 18px;
+ }
+ #nav p{
+    font-size: 15px;
+ }
+ #nav img{
+     width: 22px;
+ }
+        }
+        
+    </style>
+    <script>
+let plus_hor,plus_mniute,plus_second,minus_hour,minus_minute,minus_second;
+plus_hor=document.getElementById("plus_hour");
+plus_minute=document.getElementById("plus_minute");
+plus_second=document.getElementById("plus_second");
+minus_hour=document.getElementById("minus_hour");
+minus_minute=document.getElementById("minus_minute");
+minus_second=document.getElementById("minus_second");
+var a=0;
+var b=0;
+var c=0;
+
+    function plus_hore(){
+    a+=1;
+    document.querySelector('.out1').innerHTML=a+" h ";
+    }
+function minus_hore(){
+a--;
+document.querySelector('.out1').innerHTML=a+" h ";
+if(a<0){
+    a=0;
+document.querySelector('.out1').innerHTML=a+" h ";
+
+}
+}
+
+function plus_minu(){
+    b+=1;
+    document.querySelector('.out2').innerHTML=b+" m ";
+    }
+function minus_minu(){
+b--;
+document.querySelector('.out2').innerHTML=b+" m ";
+if(b<0){
+    b=0;
+document.querySelector('.out2').innerHTML=b+" m ";
+
+}
+}
+function plus_sec(){
+    c+=1;
+    document.querySelector('.out3').innerHTML=c+" s";
+    }
+function minus_sec(){
+c--;
+document.querySelector('.out3').innerHTML=c+" s";
+if(c<0){
+    c=0;
+document.querySelector('.out3').innerHTML=c+" s";
+
+}
+}
+plus_second.onclick=plus_sec;
+minus_second.onclick=minus_sec;
+plus_minute.onclick=plus_minu;
+minus_minute.onclick=minus_minu;
+plus_hor.onclick=plus_hore;
+minus_hour.onclick=minus_hore;
+var check;
+var start=document.getElementById("start");
+function s(){
+  
+    if(a==0&&c==0&&b==0){
+       return;
+start.onclick=s;
+
+   }
+    if(c==0){
+        b--;
+        c=60;
+
+    }
+    if(b<0){
+        a--;
+        b=60;
+
+    }
+    if(c!==0){
+        check=setTimeout(function() {
+            plus_second.onclick=false;
+minus_second.onclick=false;
+plus_minute.onclick=false;
+minus_minute.onclick=false;
+plus_hor.onclick=false;
+minus_hour.onclick=false;
+        c--;
+           document.getElementById("outer2").innerHTML=b+"m";
+    document.getElementById("outer3").innerHTML=c+"s";
+s();
+  }, 1000);
+};
+
+    document.getElementById("outer1").innerHTML=a+"h";
+    document.getElementById("outer2").innerHTML=b+"m";
+    document.getElementById("outer3").innerHTML=c+"s";
+    start.onclick=false;
+}
+start.onclick=s;
+document.getElementById("stop").onclick=function(){
+    clearTimeout(check);
+    start.onclick=s;
+}
+
+document.getElementById("reset").onclick=function(){
+    start.onclick=s;
+
+    plus_second.onclick=plus_sec;
+minus_second.onclick=minus_sec;
+plus_minute.onclick=plus_minu;
+minus_minute.onclick=minus_minu;
+plus_hor.onclick=plus_hore;
+minus_hour.onclick=minus_hore;
+    clearTimeout(check);
+    a=0;
+    b=0;
+    c=0;
+    document.getElementById("outer1").innerHTML=a+"h";
+    document.getElementById("outer2").innerHTML=b+"m";
+    document.getElementById("outer3").innerHTML=c+"s";
+    document.querySelector(".out1").innerHTML=a+"h";
+    document.querySelector(".out2").innerHTML=b+"m";
+    document.querySelector(".out3").innerHTML=c+"s";
+
+  console.log(c);
+}
+var slider1=document.querySelector('.values');
+var closer=document.querySelector('.img');
+var menu=document.querySelector('.menu');
+
+var span2=document.getElementById("text2");
+var span3=document.getElementById("text3");
+var span4=document.getElementById("text4");
+
+
+
+
+closer.onclick=function(){
+    if(span2.innerHTML=="Кликер"){
+ 
+        menu.style="width:70px;";
+
+ span2.style=" font-size: 0px;";
+ span3.style=" font-size: 0px;";
+span4.style=" font-size: 0px;";
+
+
+ span2.innerHTML="Клике";
+ menu.style="width:50px";
+}
+else if(span2.innerHTML=="Клике"){
+console.log("hi");
+menu.style="width:30%;";
+
+span2.style=" font-size: 14px;";
+span3.style=" font-size: 14px;";
+span4.style=" font-size: 14px;";
+
+
+
+span2.innerHTML="Кликер";
+}
+}
+    </script>
+</body>
+</html>
